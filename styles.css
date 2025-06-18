@@ -1,0 +1,27 @@
+/* styles.css - Palette Sky optimisée pour ton portfolio */
+
+:root {
+  --step-1:  #0D141F;
+  --step-2:  #111A27;
+  --step-3:  #112840;
+  --step-4:  #113555;
+  --step-5:  #154467;
+  --step-6:  #1B537B;
+  --step-7:  #1F6692;
+  --step-8:  #197CAE;
+  --step-9:  #7CE2FE;
+  --step-10: #A8EEFF;
+  --step-11: #75C7F0;
+  --step-12: #C2F3FF;
+
+  --background: var(--step-1);
+  --foreground: var(--step-12);
+  --muted-foreground: var(--step-10);
+  --border: var(--step-5);
+  --input: var(--step-3);
+  --card: var(--step-3);
+  --card-foreground: var(--step-12);
+  --primary: var(--step-9);
+  --primary-foreground: var(--step-1);
+}
+

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home - Elodie Fourcade</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600&display=swap" rel="stylesheet" />
+
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Archivo', 'sans-serif'],
+            },
+          },
+        },
+      };
+    </script>
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body class="bg-[var(--background)] text-[var(--foreground)] font-sans transition-colors duration-300">
+
+      <header class="p-4">
+        <nav class="max-w-5xl mx-auto flex justify-between items-center">
+          <h1 class="text-xl font-semibold">Mon logo</h1>
+          <div class="flex items-center gap-6">
+            <ul class="flex gap-6 text-sm font-medium">
+              <li><a href="#about" class="hover:text-[var(--step-9)]">À propos</a></li>
+              <li><a href="#projects" class="hover:text-[var(--step-9)]">Projets</a></li>
+              <li><a href="#contact" class="hover:text-[var(--step-9)]">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+
+    <section id="about" class="p-8">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">À propos</h2>
+        <p class="rounded-lg p-4 bg-[var(--card)] text-[var(--card-foreground)] border border-[var(--border)]">
+          Bloc de description
+        </p>
+      </div>
+    </section>
+
+    <section id="projects" class="p-8">
+      <div class="max-w-5xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-8">Projets Github</h2>
+        <div class="grid md:grid-cols-3 gap-6">
+          <div class="rounded-lg p-4 bg-[var(--card)] text-[var(--card-foreground)] border border-[var(--border)] flex items-center justify-center">
+          <h3 class="text-lg font-semibold"><a href="https://github.com/elof-dev/Projet2_Elodie_Fourcade" class="hover:text-[var(--step-9)]">Outil de surveillance des prix</a></h3>
+          </div>
+          <div class="rounded-lg p-4 bg-[var(--card)] text-[var(--card-foreground)] border border-[var(--border)] flex items-center justify-center">
+          <h3 class="text-lg font-semibold"><a href="https://github.com/elof-dev/Projet_4_Elodie_Fourcade" class="hover:text-[var(--step-9)]">Gestion de tournois d'échecs</a></h3>
+          </div>
+          <div class="rounded-lg p-4 bg-[var(--card)] text-[var(--card-foreground)] border border-[var(--border)] flex items-center justify-center">
+          <h3 class="text-lg font-semibold"><a href="https://github.com/elof-dev/Projet_6_Elodie_Fourcade_JustStreamIt" class="hover:text-[var(--step-9)]">Site web de recherche de films</a></h3>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="p-8">
+      <div class="max-w-xl mx-auto">
+        <h2 class="text-2xl font-semibold mb-4">Contact</h2>
+        <form id="contactForm" class="space-y-4">
+          <input type="text" name="from_name" placeholder="Votre nom" required class="w-full p-3 border border-[var(--border)] rounded">
+          <input type="email" name="from_email" placeholder="Votre email" required class="w-full p-3 border border-[var(--border)] rounded">
+          <textarea name="message" placeholder="Votre message" required class="w-full p-3 border border-[var(--border)] rounded h-32"></textarea>
+          <button type="submit" class="w-full bg-[var(--primary)] text-[var(--primary-foreground)] p-3 rounded hover:opacity-90">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="text-center text-sm p-4 text-[var(--muted-foreground)]">
+      © 2025 — Elodie Fourcade — Tous droits réservés.
+    </footer>
+
+   
+  </body>
+</html>
