@@ -25,3 +25,15 @@
   --primary-foreground: var(--step-1);
 }
 
+input,
+textarea {
+  color: var(--foreground);
+  background: var(--input);
+}
+
+input::placeholder,
+textarea::placeholder {
+  color: var(--muted-foreground);
+  opacity: 1;
+}
+
